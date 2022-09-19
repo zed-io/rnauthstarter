@@ -27,6 +27,7 @@
     "firebase": "^9.10.0",
     "react": "18.1.0",
     "react-native": "0.70.1",
+    "react-native-auth0": "^2.13.3",
     "react-native-config": "^1.4.6",
     "react-native-exit-app": "^1.1.0",
     "react-native-gesture-handler": "^2.6.1",
