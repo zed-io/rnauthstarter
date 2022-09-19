@@ -10,11 +10,18 @@
 #import <React/CoreModulesPlugins.h>
 #import <React/RCTCxxBridgeDelegate.h>
 #import <React/RCTFabricSurfaceHostingProxyRootView.h>
+#import <React/RCTLinkingManager.h>
 #import <React/RCTSurfacePresenter.h>
 #import <React/RCTSurfacePresenterBridgeAdapter.h>
 #import <ReactCommon/RCTTurboModuleManager.h>
 
 #import <react/config/ReactNativeConfig.h>
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options
+{
+  return [RCTLinkingManager application:app openURL:url options:options];
+}
 
 static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 
@@ -44,7 +51,7 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 #endif
 
   NSDictionary *initProps = [self prepareInitialProps];
-  UIView *rootView = RCTAppSetupDefaultRootView(bridge, @"rnstarter", initProps);
+  UIView *rootView = RCTAppSetupDefaultRootView(bridge, @"rnauthstarter", initProps);
 
   if (@available(iOS 13.0, *)) {
     rootView.backgroundColor = [UIColor systemBackgroundColor];

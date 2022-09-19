@@ -1,4 +1,6 @@
 PODS:
+  - A0Auth0 (2.13.3):
+    - React-Core
   - boost (1.76.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
@@ -410,6 +412,7 @@ PODS:
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
+  - A0Auth0 (from `../node_modules/react-native-auth0`)
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXApplication (from `../node_modules/expo-application/ios`)
@@ -503,6 +506,8 @@ SPEC REPOS:
     - YogaKit
 
 EXTERNAL SOURCES:
+  A0Auth0:
+    :path: "../node_modules/react-native-auth0"
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
   DoubleConversion:
@@ -601,6 +606,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  A0Auth0: 49dea639a21d98bb8e3ae204a0d768c666bf7369
   boost: a7c83b31436843459a1961bfd74b96033dc77234
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
@@ -665,6 +671,6 @@ SPEC CHECKSUMS:
   Yoga: 6c8252e38d65aa387daee699eacf027e055e0b31
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: e63414c1c98093c795bf8fb0960e212e3408edfc
+PODFILE CHECKSUM: b9fa565b071136dab003fc43ec9c33b6171fd316
 
 COCOAPODS: 1.11.3
