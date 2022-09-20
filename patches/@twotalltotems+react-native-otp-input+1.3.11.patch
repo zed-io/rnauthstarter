@@ -1,0 +1,29 @@
+diff --git a/node_modules/@twotalltotems/react-native-otp-input/dist/index.js b/node_modules/@twotalltotems/react-native-otp-input/dist/index.js
+index 71580b8..c56362a 100644
+--- a/node_modules/@twotalltotems/react-native-otp-input/dist/index.js
++++ b/node_modules/@twotalltotems/react-native-otp-input/dist/index.js
+@@ -1,9 +1,9 @@
+-import React, { Component } from 'react';
+-import { View, TextInput, TouchableWithoutFeedback, Keyboard, Platform, I18nManager, } from 'react-native';
+ import Clipboard from '@react-native-community/clipboard';
+-import styles from './styles';
+-import { isAutoFillSupported } from './helpers/device';
++import React, { Component } from 'react';
++import { I18nManager, Keyboard, Platform, TextInput, TouchableWithoutFeedback, View } from 'react-native';
+ import { codeToArray } from './helpers/codeToArray';
++import { isAutoFillSupported } from './helpers/device';
++import styles from './styles';
+ export default class OTPInputView extends Component {
+     constructor(props) {
+         super(props);
+@@ -155,7 +155,9 @@ export default class OTPInputView extends Component {
+     }
+     componentDidMount() {
+         this.copyCodeFromClipBoardOnAndroid();
+-        this.bringUpKeyBoardIfNeeded();
++        setTimeout(() => {
++            this.bringUpKeyBoardIfNeeded();
++        })
+         this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this.handleKeyboardDidHide);
+     }
+     componentWillUnmount() {

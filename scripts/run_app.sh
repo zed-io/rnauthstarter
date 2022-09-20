@@ -45,7 +45,8 @@ ENV_FILENAME=".env.${ENV_NAME}"
 # From https://stackoverflow.com/a/56229034/158525
 # Supports vars with spaces and single or double quotes
 eval "$(grep -v -e '^#' "$ENV_FILENAME" | xargs -I {} echo export \'{}\')"
-
+echo "Domain:" $AUTH0_DOMAIN
+echo "ClientId:" $AUTH0_CLIENT_ID
 echo "**************************"
 echo "Current directory: $(pwd)"
 echo "Machine type: $MACHINE"
