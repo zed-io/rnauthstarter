@@ -11,6 +11,7 @@ export interface State {
   requirePinOnAppOpen: boolean;
   minVersion: string | null;
   appState: AppState;
+  e146phoneNumber: string | null;
 }
 
 const initialState = {
@@ -18,6 +19,7 @@ const initialState = {
   minVersion: null,
   appState: AppState.Active,
   requirePinOnAppOpen: false,
+  e146phoneNumber: null,
 };
 
 export const reducer = (
@@ -38,6 +40,12 @@ export const reducer = (
       return {
         ...state,
         appState: action.state as AppState,
+      };
+    }
+    case Actions.SET_PHONE_NUMBER: {
+      return {
+        ...state,
+        e146phoneNumber: action.e146phoneNumber,
       };
     }
     default:

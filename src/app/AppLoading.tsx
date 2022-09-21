@@ -16,7 +16,6 @@ export const AppLoading = ({showRestartButton}: Props) => {
 
   useEffect(() => {
     const pid = setTimeout(toggleRestartButton, SHOW_RESTART_BUTTON_TIMEOUT);
-    console.log(pid);
     return () => {
       clearTimeout(pid);
     };

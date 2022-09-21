@@ -11,10 +11,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7AFA681924FCAFE5F71A8F08 /* libPods-rnauthstarter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1824214FA94B6DBD8F0DD714 /* libPods-rnauthstarter.a */; };
+		39D1E9731792CD58BFE0BBF6 /* libPods-rnauthstarter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB498E8EF193E5037A2796 /* libPods-rnauthstarter.a */; };
+		4CEB5E527A2101BECE372B20 /* libPods-rnauthstarter-rnauthstarterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98678B3D6BB281B4BD156F9A /* libPods-rnauthstarter-rnauthstarterTests.a */; };
 		7BEE8F2AC10D21284A640905 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D61FC839EB77180276083E9 /* ExpoModulesProvider.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		CF5A22C2F850DDC3BE356483 /* libPods-rnauthstarter-rnauthstarterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23354E70AE63F094BBCEE99C /* libPods-rnauthstarter-rnauthstarterTests.a */; };
 		DC0F01BDAC61D6DA1E2DCCF2 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99A60502128A45EF0AD4372 /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,15 +39,15 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = rnauthstarter/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rnauthstarter/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rnauthstarter/main.m; sourceTree = "<group>"; };
-		1824214FA94B6DBD8F0DD714 /* libPods-rnauthstarter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnauthstarter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23354E70AE63F094BBCEE99C /* libPods-rnauthstarter-rnauthstarterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnauthstarter-rnauthstarterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D1520E48DD29DBD2AB2D551 /* Pods-rnauthstarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnauthstarter.release.xcconfig"; path = "Target Support Files/Pods-rnauthstarter/Pods-rnauthstarter.release.xcconfig"; sourceTree = "<group>"; };
+		4FB3FDBD01610F03D08DB97C /* Pods-rnauthstarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnauthstarter.debug.xcconfig"; path = "Target Support Files/Pods-rnauthstarter/Pods-rnauthstarter.debug.xcconfig"; sourceTree = "<group>"; };
+		5B1F27425A2FFE3D2A8D8CE7 /* Pods-rnauthstarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnauthstarter.release.xcconfig"; path = "Target Support Files/Pods-rnauthstarter/Pods-rnauthstarter.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rnauthstarter/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		88BAF4DDE56452CDAE2A3183 /* Pods-rnauthstarter-rnauthstarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnauthstarter-rnauthstarterTests.debug.xcconfig"; path = "Target Support Files/Pods-rnauthstarter-rnauthstarterTests/Pods-rnauthstarter-rnauthstarterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9B1E3AFE64AF44D5DE007185 /* Pods-rnauthstarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnauthstarter.debug.xcconfig"; path = "Target Support Files/Pods-rnauthstarter/Pods-rnauthstarter.debug.xcconfig"; sourceTree = "<group>"; };
+		95CAACF5A034BC6263D83F54 /* Pods-rnauthstarter-rnauthstarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnauthstarter-rnauthstarterTests.debug.xcconfig"; path = "Target Support Files/Pods-rnauthstarter-rnauthstarterTests/Pods-rnauthstarter-rnauthstarterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		98678B3D6BB281B4BD156F9A /* libPods-rnauthstarter-rnauthstarterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnauthstarter-rnauthstarterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFB76E5FBCB55C04D10706B /* Pods-rnauthstarter-rnauthstarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnauthstarter-rnauthstarterTests.release.xcconfig"; path = "Target Support Files/Pods-rnauthstarter-rnauthstarterTests/Pods-rnauthstarter-rnauthstarterTests.release.xcconfig"; sourceTree = "<group>"; };
 		A99A60502128A45EF0AD4372 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-rnauthstarter-rnauthstarterTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		ACCB498E8EF193E5037A2796 /* libPods-rnauthstarter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnauthstarter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F40E619FF162E9BB52998D03 /* Pods-rnauthstarter-rnauthstarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnauthstarter-rnauthstarterTests.release.xcconfig"; path = "Target Support Files/Pods-rnauthstarter-rnauthstarterTests/Pods-rnauthstarter-rnauthstarterTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF5A22C2F850DDC3BE356483 /* libPods-rnauthstarter-rnauthstarterTests.a in Frameworks */,
+				4CEB5E527A2101BECE372B20 /* libPods-rnauthstarter-rnauthstarterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AFA681924FCAFE5F71A8F08 /* libPods-rnauthstarter.a in Frameworks */,
+				39D1E9731792CD58BFE0BBF6 /* libPods-rnauthstarter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				1824214FA94B6DBD8F0DD714 /* libPods-rnauthstarter.a */,
-				23354E70AE63F094BBCEE99C /* libPods-rnauthstarter-rnauthstarterTests.a */,
+				ACCB498E8EF193E5037A2796 /* libPods-rnauthstarter.a */,
+				98678B3D6BB281B4BD156F9A /* libPods-rnauthstarter-rnauthstarterTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,10 +161,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9B1E3AFE64AF44D5DE007185 /* Pods-rnauthstarter.debug.xcconfig */,
-				7D1520E48DD29DBD2AB2D551 /* Pods-rnauthstarter.release.xcconfig */,
-				88BAF4DDE56452CDAE2A3183 /* Pods-rnauthstarter-rnauthstarterTests.debug.xcconfig */,
-				F40E619FF162E9BB52998D03 /* Pods-rnauthstarter-rnauthstarterTests.release.xcconfig */,
+				4FB3FDBD01610F03D08DB97C /* Pods-rnauthstarter.debug.xcconfig */,
+				5B1F27425A2FFE3D2A8D8CE7 /* Pods-rnauthstarter.release.xcconfig */,
+				95CAACF5A034BC6263D83F54 /* Pods-rnauthstarter-rnauthstarterTests.debug.xcconfig */,
+				9CFB76E5FBCB55C04D10706B /* Pods-rnauthstarter-rnauthstarterTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -185,12 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "rnauthstarterTests" */;
 			buildPhases = (
-				F70A54BD99FED1AF50D96EE4 /* [CP] Check Pods Manifest.lock */,
+				20625482153761735A927710 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				31DE05C0D382137ABFBADA7F /* [CP] Embed Pods Frameworks */,
-				ED9D42872E49B543D7E8901A /* [CP] Copy Pods Resources */,
+				6D0CFBFF930AA3B21E63A8D3 /* [CP] Embed Pods Frameworks */,
+				DFA305F760C75818CBD9FAB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,14 +206,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "rnauthstarter" */;
 			buildPhases = (
-				E31C54104A944D7C42191D94 /* [CP] Check Pods Manifest.lock */,
+				A4257BB42F638E7A3F51B8EF /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				7E6576EE04565B04F5F3D891 /* [CP] Embed Pods Frameworks */,
-				F323B29F14B7D4610B436618 /* [CP] Copy Pods Resources */,
+				866D9908069F217CA419AF00 /* [CP] Embed Pods Frameworks */,
+				284E40A842596219196C478D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,7 +296,46 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		31DE05C0D382137ABFBADA7F /* [CP] Embed Pods Frameworks */ = {
+		20625482153761735A927710 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rnauthstarter-rnauthstarterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		284E40A842596219196C478D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rnauthstarter/Pods-rnauthstarter-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rnauthstarter/Pods-rnauthstarter-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnauthstarter/Pods-rnauthstarter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D0CFBFF930AA3B21E63A8D3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,7 +352,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnauthstarter-rnauthstarterTests/Pods-rnauthstarter-rnauthstarterTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7E6576EE04565B04F5F3D891 /* [CP] Embed Pods Frameworks */ = {
+		866D9908069F217CA419AF00 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -330,7 +369,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnauthstarter/Pods-rnauthstarter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E31C54104A944D7C42191D94 /* [CP] Check Pods Manifest.lock */ = {
+		A4257BB42F638E7A3F51B8EF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,7 +391,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED9D42872E49B543D7E8901A /* [CP] Copy Pods Resources */ = {
+		DFA305F760C75818CBD9FAB5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,45 +406,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnauthstarter-rnauthstarterTests/Pods-rnauthstarter-rnauthstarterTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F323B29F14B7D4610B436618 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rnauthstarter/Pods-rnauthstarter-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rnauthstarter/Pods-rnauthstarter-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnauthstarter/Pods-rnauthstarter-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F70A54BD99FED1AF50D96EE4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-rnauthstarter-rnauthstarterTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -462,7 +462,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88BAF4DDE56452CDAE2A3183 /* Pods-rnauthstarter-rnauthstarterTests.debug.xcconfig */;
+			baseConfigurationReference = 95CAACF5A034BC6263D83F54 /* Pods-rnauthstarter-rnauthstarterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -490,7 +490,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F40E619FF162E9BB52998D03 /* Pods-rnauthstarter-rnauthstarterTests.release.xcconfig */;
+			baseConfigurationReference = 9CFB76E5FBCB55C04D10706B /* Pods-rnauthstarter-rnauthstarterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -515,7 +515,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B1E3AFE64AF44D5DE007185 /* Pods-rnauthstarter.debug.xcconfig */;
+			baseConfigurationReference = 4FB3FDBD01610F03D08DB97C /* Pods-rnauthstarter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -526,13 +526,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shottah.rnauthstarter;
 				PRODUCT_NAME = rnauthstarter;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -542,7 +543,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D1520E48DD29DBD2AB2D551 /* Pods-rnauthstarter.release.xcconfig */;
+			baseConfigurationReference = 5B1F27425A2FFE3D2A8D8CE7 /* Pods-rnauthstarter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -552,13 +553,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shottah.rnauthstarter;
 				PRODUCT_NAME = rnauthstarter;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

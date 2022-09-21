@@ -1,6 +1,7 @@
 import {AnyAction} from 'redux';
 import {spawn, takeEvery} from 'redux-saga/effects';
 import {sleep} from 'src/utils/time';
+import {authSaga} from '../auth/saga';
 
 let sagasFinishedLoading = false;
 
@@ -28,6 +29,7 @@ export function* rootSaga() {
   try {
     // @todo Hook up submodule sagas
     yield spawn(loggerSaga);
+    yield spawn(authSaga);
   } catch (error: any) {
     console.error('redux/saga', JSON.stringify(error));
   } finally {
