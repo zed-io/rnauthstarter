@@ -6,9 +6,11 @@ import {Button, StyleSheet, View} from 'react-native';
 import {useDispatch} from 'react-redux';
 import {setE146PhoneNumber} from '../app/actions';
 import {TouchableOpacity} from 'react-native-gesture-handler';
+import {useAuth0} from '../auth/useAuth';
 
 const Home = () => {
   const dispatch = useDispatch();
+  const {sendText, verifyText} = useAuth0();
   const [phoneNumber, setPhoneNumber] = useState<string>('');
 
   const handlePhoneNumber = (text: string) => {
@@ -17,15 +19,18 @@ const Home = () => {
 
   const submitPhoneNumber = () => {
     dispatch(setE146PhoneNumber(phoneNumber));
+    sendText(phoneNumber);
+    console.log('Phone', phoneNumber);
   };
 
   const handleOTPCode = (code: string) => {
     console.log('OTP', code);
+    verifyText(phoneNumber, code).then(console.log).catch(console.error);
   };
 
   return (
     <SafeAreaView>
-      <View style={styles.phoneConturkstainer}>
+      <View style={styles.phoneContainer}>
         <PhoneInput
           containerStyle={styles.phoneInputStyle}
           onChangeFormattedText={handlePhoneNumber}
