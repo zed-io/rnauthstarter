@@ -3,4 +3,5 @@ export enum Screens {
   AppLoading = 'AppLoading',
   Home = 'Home',
   Settings = 'Settings',
+  Transactions = 'Transactions',
 }

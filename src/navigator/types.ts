@@ -5,4 +5,5 @@ export type StackParamList = {
   [Screens.Home]: undefined;
   [Screens.Settings]: undefined;
   [Screens.AppLoading]: undefined;
+  [Screens.Transactions]: undefined;
 };

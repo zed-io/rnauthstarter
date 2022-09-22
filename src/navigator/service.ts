@@ -8,7 +8,8 @@ export const navigate = <RouteName extends keyof StackParamList>(
     ? [RouteName] | [RouteName, StackParamList[RouteName]]
     : [RouteName, StackParamList[RouteName]]
 ) => {
+  const [routeName, params] = args;
   if (navigationRef.isReady()) {
-    navigationRef.navigate(args);
+    navigationRef.navigate(routeName as never, params as never);
   }
 };
