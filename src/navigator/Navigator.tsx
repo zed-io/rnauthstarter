@@ -6,6 +6,10 @@ import Home from 'src/home/Home';
 import {AppLoading} from 'src/app/AppLoading';
 import {emptyHeader, noHeader} from './Headers';
 import {ExtractProps} from 'src/utils/typescript';
+import {useSelector} from 'react-redux';
+import {authorizationTokenSelector} from '../auth/selectors';
+import Transactions from '../transactions/Transactions';
+import {navigate} from './service';
 
 const Stack = createStackNavigator<StackParamList>();
 const RootStack = createStackNavigator<StackParamList>();
@@ -18,10 +22,21 @@ function MainStackScreen() {
   const [initialRouteName, setInitialRoute] =
     React.useState<InitialRouteName>(undefined);
 
+  const {accessToken} = useSelector(authorizationTokenSelector) || {};
+
   useEffect(() => {
-    const initialRoute = Screens.Home;
+    let initialRoute = Screens.Home;
+    if (accessToken) {
+      initialRoute = Screens.Transactions;
+    }
     setInitialRoute(initialRoute);
   }, []);
+
+  useEffect(() => {
+    if (accessToken) {
+      navigate(Screens.Transactions, {});
+    }
+  }, [accessToken]);
 
   if (!initialRouteName) {
     return <AppLoading />;
@@ -30,6 +45,7 @@ function MainStackScreen() {
   return (
     <Stack.Navigator initialRouteName={initialRouteName}>
       <Stack.Screen name={Screens.Home} component={Home} />
+      <Stack.Screen name={Screens.Transactions} component={Transactions} />
     </Stack.Navigator>
   );
 }

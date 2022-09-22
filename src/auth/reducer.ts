@@ -5,15 +5,18 @@ import {
 } from 'src/redux/persist-helper';
 import {ActionTypes} from 'src/actions';
 import {Actions} from './actions';
+import {Auth0AuthorizationResponse} from './types';
 
 export interface State {
   auth0Authorized: boolean;
   firebaseAuthorized: boolean;
+  authorizationToken: Auth0AuthorizationResponse | null;
 }
 
 const initialState: State = {
   auth0Authorized: false,
   firebaseAuthorized: false,
+  authorizationToken: null,
 };
 
 export const reducer = (
@@ -22,22 +25,16 @@ export const reducer = (
 ): State => {
   switch (action.type) {
     case REHYDRATE: {
-      const rehydratePayload = getRehydratePayload(action, 'app');
+      const rehydratePayload = getRehydratePayload(action, 'auth');
       return {
         ...state,
         ...rehydratePayload,
       };
     }
-    case Actions.AUTH0_AUTHORIZED: {
+    case Actions.SET_ACCESS_TOKEN: {
       return {
         ...state,
-        auth0Authorized: true,
-      };
-    }
-    case Actions.FIREBASE_AUTHORIZED: {
-      return {
-        ...state,
-        firebaseAuthorized: true,
+        authorizationToken: action.authorizationToken,
       };
     }
     default: {

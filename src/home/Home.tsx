@@ -20,12 +20,10 @@ const Home = () => {
   const submitPhoneNumber = () => {
     dispatch(setE146PhoneNumber(phoneNumber));
     sendText(phoneNumber);
-    console.log('Phone', phoneNumber);
   };
 
   const handleOTPCode = (code: string) => {
-    console.log('OTP', code);
-    verifyText(phoneNumber, code).then(console.log).catch(console.error);
+    verifyText(phoneNumber, code);
   };
 
   return (

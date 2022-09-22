@@ -1,22 +1,19 @@
+import {Auth0AuthorizationResponse} from './types';
+
 export enum Actions {
-  FIREBASE_AUTHORIZED = 'FIREBASE/AUTHORIZED',
-  AUTH0_AUTHORIZED = 'AUTH0/AUTHORIZED',
+  SET_ACCESS_TOKEN = 'AUTH/SET_ACCESS_TOKEN',
 }
 
-export interface FirebaseAuthorizedAction {
-  type: Actions.FIREBASE_AUTHORIZED;
+export interface SetAccessToken {
+  type: Actions.SET_ACCESS_TOKEN;
+  authorizationToken: Auth0AuthorizationResponse;
 }
 
-export const firebaseAuthorized = (): FirebaseAuthorizedAction => ({
-  type: Actions.FIREBASE_AUTHORIZED,
+export const setAccessToken = (
+  authorizationToken: Auth0AuthorizationResponse,
+): SetAccessToken => ({
+  type: Actions.SET_ACCESS_TOKEN,
+  authorizationToken,
 });
 
-export interface Auth0AuthorizedAction {
-  type: Actions.AUTH0_AUTHORIZED;
-}
-
-export const Auth0Authorized = (): Auth0AuthorizedAction => ({
-  type: Actions.AUTH0_AUTHORIZED,
-});
-
-export type ActionTypes = FirebaseAuthorizedAction | Auth0AuthorizedAction;
+export type ActionTypes = SetAccessToken;
