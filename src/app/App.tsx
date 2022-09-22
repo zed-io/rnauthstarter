@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+
 import {Dimensions} from 'react-native';
 import {Provider} from 'react-redux';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
@@ -6,49 +7,49 @@ import {PersistGate} from 'redux-persist/integration/react';
 import {waitUntilSagasFinishLoading} from 'src/redux/saga';
 import {persistor, store} from '../redux/store';
 import {NavigatorWrapper} from 'src/navigator/NavigatorWrapper';
+import ApolloWrapper from '../apollo/ApolloWrapper';
 interface Props {
   appStartedMillis: number;
 }
 
-export class App extends React.Component<Props> {
-  reactLoadTime: number = Date.now();
+export const App = (props: Props) => {
+  const [reactLoadTime] = useState(Date.now());
 
-  async componentDidMount(): Promise<void> {
-    // @todo Catch when app is launched using deep link
-  }
+  useEffect(() => {
+    // @note Component did mount
+    return () => {
+      // @note Component will unmount
+    };
+  });
 
-  componentWillUnmount(): void {
-    // @todo Prepare for the app to be closed
-  }
-
-  logAppLoadTime() {
-    const {appStartedMillis} = this.props;
+  const logAppLoadTime = () => {
+    const {appStartedMillis} = props;
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const readLoadDuration = (this.reactLoadTime - appStartedMillis) / 1000;
+    const readLoadDuration = (reactLoadTime - appStartedMillis) / 1000;
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const appLoadDuration = (Date.now() - appStartedMillis) / 1000;
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const {width, height} = Dimensions.get('window');
     // @todo Track telemetry on app launch
-  }
+  };
 
-  async handleOpenUrl() {
+  const handleOpenUrl = async () => {
     await waitUntilSagasFinishLoading();
     // @todo Handle deep link opening
-  }
+  };
 
-  render() {
-    return (
-      <SafeAreaProvider>
-        <Provider store={store}>
-          <PersistGate persistor={persistor}>
+  return (
+    <SafeAreaProvider>
+      <Provider store={store}>
+        <PersistGate persistor={persistor}>
+          <ApolloWrapper>
             {/* @todo Add App Navigation Wrapper */}
             <NavigatorWrapper />
-          </PersistGate>
-        </Provider>
-      </SafeAreaProvider>
-    );
-  }
-}
+          </ApolloWrapper>
+        </PersistGate>
+      </Provider>
+    </SafeAreaProvider>
+  );
+};
 
 export default App;
