@@ -37,6 +37,12 @@ export const reducer = (
         authorizationToken: action.authorizationToken,
       };
     }
+    case Actions.INVALIDATE_ACCESS_TOKEN: {
+      return {
+        ...state,
+        authorizationToken: null,
+      };
+    }
     default: {
       return {...state};
     }

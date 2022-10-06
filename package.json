@@ -31,6 +31,7 @@
     "expo-constants": "~13.2.4",
     "firebase": "^9.10.0",
     "graphql": "^16.6.0",
+    "graphql-ws": "^5.11.2",
     "patch-package": "^6.4.7",
     "react": "18.1.0",
     "react-native": "0.70.1",

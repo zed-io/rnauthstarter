@@ -15,6 +15,7 @@ PLATFORM=""
 ENV_NAME="dev"
 RELEASE=false
 SIMULATOR=""
+CONTAINER_NAME="rnauthstarter_graphql-engine_1"
 
 while getopts 'a:p:e:s:r' flag; do
   case "${flag}" in
@@ -52,6 +53,16 @@ echo "Machine type: $MACHINE"
 echo "Environment: $ENV_FILENAME"
 echo "Platform: $PLATFORM"
 echo "**************************"
+
+# Start Hasura for Development
+if [ "$ENV_NAME" = "dev" ]; then
+  
+  if [ "$(docker inspect -f '{{.State.Running}}' $CONTAINER_NAME)" == "true" ]; then
+    echo Docker container is running
+  else
+    docker-compose up -d
+  fi
+fi
 
 # Build the app and run it
 if [ "$PLATFORM" = "android" ]; then

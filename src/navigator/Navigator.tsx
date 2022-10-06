@@ -9,7 +9,7 @@ import {ExtractProps} from 'src/utils/typescript';
 import {useSelector} from 'react-redux';
 import {authorizationTokenSelector} from '../auth/selectors';
 import Transactions from '../transactions/Transactions';
-import {navigate} from './service';
+import {navigate, navigateReset} from './service';
 
 const Stack = createStackNavigator<StackParamList>();
 const RootStack = createStackNavigator<StackParamList>();
@@ -35,6 +35,8 @@ function MainStackScreen() {
   useEffect(() => {
     if (accessToken) {
       navigate(Screens.Transactions, {});
+    } else {
+      navigateReset(Screens.Home, {});
     }
   }, [accessToken]);
 
